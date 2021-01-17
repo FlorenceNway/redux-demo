@@ -1,0 +1,45 @@
+body{
+    background: #5d5d5a;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+
+li {
+    display: flex;
+    justify-content: space-between;
+    width: 42%;
+    margin: auto;
+}
+
+span {
+    margin: 0 1em 0 0.25em;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+ul li button {
+    width: 80px;
+    background-color: #ffcdab;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+li button:hover{
+    background: #ffcdab;
+    border: 1px solid #ffa45c;
+}
+
+li div {
+    margin-right: 0;
+}
