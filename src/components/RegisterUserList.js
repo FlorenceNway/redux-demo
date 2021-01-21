@@ -23,14 +23,14 @@ const RegisterUserList = () => {
     }
 
     return (
-        <div className='list-wrapper'>
+        <div data-test='list-wrapper'>
             <ul>
                 {users.map(({id, username}, index) => {
                     const isDisableDown = users.length -1 === index
                 return ( 
                     <li key={id}>
-                        <span>{username}</span>
-                        <div>
+                        <span data-test='username'>{username}</span>
+                        <div data-test='buttons'>
                             <button onClick={() => deleteHandler(id)} >
                                 <FontAwesomeIcon icon={faTrashAlt} />
                             </button>
